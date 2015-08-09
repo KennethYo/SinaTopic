@@ -181,7 +181,7 @@ public class MainActivity extends Activity implements TextWatcher, View.OnClickL
                 lastPos = content.indexOf(topic, lastPos);
                 if (lastPos != -1) {
                     if (selectionStart != 0 && selectionStart >= lastPos && selectionStart <= (lastPos + topic.length())) {
-                        //删除话题
+                        //选中话题
                         mEditText.setSelection(lastPos, lastPos + topic.length());
                         return true;
                     }
